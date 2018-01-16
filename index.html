@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blood Pressure Monitor Analyzer</title>
+    <script src="serial.js"></script>
+    <script src="bpa_protocol.js"></script>
+    <script src="runner.js"></script>
+  </head>
+  <body>
+    <p>
+      <button id="connect">Connect</button><span id="status"></span>
+    </p>
+    <table border="1px">
+      <thead>
+        <tr>
+          <th>Patient ID</th>
+          <th>Device Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="bpa_patient_id">&nbsp;</td>
+          <td id="bpa_device_date">&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="1px">
+      <thead>
+        <tr>
+          <th>Date Time</th>
+          <th>SYS. (mmHg)</th>
+          <th>DIA. (mmHg)</th>
+          <td>PUL. (min)</th>
+        </tr>
+      </thead>
+      <tbody id="bpa_patient_data">
+      </tbody>	
+    </p>
+  </body>
+</html>
